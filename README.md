@@ -23,6 +23,8 @@ The RPC Ports of the nodes are mapped to your localhost, the addresses are:
 * geth-dev-miner-2: No RPC exposed
 * geth-dev-node: [http://localhost:8545](http://localhost:8545)
 
+docker exec -it geth-node geth attach ipc://root/.ethereum/geth.ipc
+
 ## Swarm (/BZZ:/)
 Swarm is a distributed storage platform and content distribution service, a native base layer service of the ethereum web3 stack. The primary objective of Swarm is to provide a sufficiently decentralized and redundant store of Ethereum’s public record, in particular to store and distribute dapp code and data as well as blockchain data. From an economic point of view, it allows participants to efficiently pool their storage and bandwidth resources in order to provide these services to all participants of the network, all while being incentivised by Ethereum. Files on Swarm are represented by their KECCAK256 Checksum.
 
